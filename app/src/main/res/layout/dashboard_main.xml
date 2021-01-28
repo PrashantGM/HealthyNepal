@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/ibtnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/home"
+            android:text="Home"
+            android:layout_weight="1"
+             />
+
+        <Button
+            android:id="@+id/ibtnHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospitals"
+            android:drawableTop="@drawable/hospital"
+            android:layout_toRightOf="@+id/ibtnHome"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/ibtnDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctors"
+            android:drawableTop="@drawable/doctor"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/ibtnHospital"/>
+        <Button
+            android:id="@+id/ibtnUserAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:drawableTop="@drawable/account"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/ibtnDoctor"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
